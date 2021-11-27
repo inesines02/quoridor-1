@@ -1,15 +1,14 @@
-~sdi1400009  Quoridor in C
+Quoridor game in C
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 Run with:
-
 gcc -o <out> quoridor.c
 ./<out>
 
+To show available commands / help :  type "list_commands" in game
 
->Δεν χρησιμοποιω την rand()
 
->Για εμενα το board και ολες οι κινησεις στον κωδικα καταχωρουνται ως εξης:
+Board layout (array):
 
            (y)
      0 1 2 3 4 5 6 7 8 
@@ -22,7 +21,8 @@ gcc -o <out> quoridor.c
      7 
      8
 
-showboard :                      // (κανονικα)
+
+showboard:
      A   B   C   D   E   F   G   H   I   
    +---+---+---+---+---+---+---+---+---+
  9 |   |   |   |   | B |   |   |   |   | 9  
@@ -46,6 +46,5 @@ showboard :                      // (κανονικα)
      A   B   C   D   E   F   G   H   I   
  
 
->Οι τοιχοι εχουν υλοποιηθει ως ενας 2D πινακας struct wall, που ουσιαστικα ειναι το wall direction.
-
+Walls are implemented as a 2D array of struct "wall",  (struct wall is basically the wall direction)
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
